@@ -154,19 +154,19 @@ section .btn-danger
   transition: 0.3s;
 }
 
+
 /* Footer */
-footer 
-{
+footer {
   background-color: #181a1d;
   color: #ffffff;
   padding: 2rem;
   font-size: 0.9rem;
   text-align: center;
   border-top: 4px solid #b20000;
-  margin-top: 3rem;
-  margin: 0.2rem 0;
+  margin: 3rem 0 0 0; /* top, right, bottom, left */
   line-height: 1.6;
 }
+
 
 /* == Form Styling for Credit & Pay Bills == */
 .form-container,
