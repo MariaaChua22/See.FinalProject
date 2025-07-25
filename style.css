@@ -1,0 +1,383 @@
+html, body 
+{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main 
+{
+  flex: 1;
+}
+
+body 
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #b20000;
+  font-weight: bold;
+}
+
+h2 {
+  color: #b20000;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo 
+{
+  height: 50px;
+}
+
+.navbar 
+{
+  background-color: #b20000;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.navbar-brand img 
+{
+  height: 50px;
+  margin-right: 8px;
+}
+
+.navbar-brand span 
+{
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link 
+{
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-link.active 
+{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.dropdown-menu 
+{
+  background-color: #b20000;
+}
+
+.dropdown-item 
+{
+  color: white;
+}
+
+.dropdown-item:hover 
+{
+  background-color: #990000;
+}
+
+/* Carousel */
+.carousel-inner.hero-carousel img 
+{
+  height: 85vh;
+  object-fit: cover;
+}
+.carousel-inner img 
+{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) 
+{
+  .carousel-inner img 
+  {
+    height: 85vh;
+  }
+}
+
+/* Welcome Section */
+.welcome-section 
+{
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.welcome-section p
+{
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+
+section.bg-light 
+{
+  background-color: #f9f9f9;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+section h1 
+{
+  font-size: 3rem;
+}
+
+section .btn-danger 
+{
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.service-card:hover 
+{
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* Footer */
+footer 
+{
+  background-color: #181a1d;
+  color: #ffffff;
+  padding: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 4px solid #b20000;
+  margin-top: 3rem;
+  margin: 0.2rem 0;
+  line-height: 1.6;
+}
+
+/* == Form Styling for Credit & Pay Bills == */
+.form-container,
+.paybills-container 
+{
+  max-width: 600px;
+  margin: 4rem auto;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px #b20000, 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container h2,
+.paybills-container h2 
+{
+  color: #b20000;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.form-container .form-label,
+.paybills-container .form-label
+{
+  font-weight: 600;
+}
+
+.form-container .btn-danger,
+.paybills-container .btn-danger 
+{
+  background-color: #b20000;
+  border: none;
+  width: 100%;
+}
+
+.form-container .btn-danger:hover,
+.paybills-container .btn-danger:hover 
+{
+  background-color: #990000;
+}
+
+.alert-success 
+{
+  display: none;
+  margin-bottom: 1rem;
+}
+
+/* == About Page Styles == */
+.grid 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.card 
+{
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.card h2
+{
+  color: #b20000;
+  margin-bottom: 10px;
+}
+
+.card:hover 
+{
+  background-color: #003366;
+  color: white;
+}
+
+.card:hover h2 
+{
+  color: white;
+}
+
+@media (max-width: 480px) 
+{
+  h1 
+  {
+    font-size: 1.5rem;
+  }
+}
+
+.about-section 
+{
+  padding: 40px 20px;
+}
+
+.about-section p 
+{
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+.credo-icon 
+{
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.credo-section 
+{
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.about-bpi 
+{
+  background-color: #fff;
+  padding: 2rem 0;
+}
+
+.stat-box 
+{
+  border-bottom: 2px solid #b20000;
+  padding: 2rem;
+  text-align: center;
+  border-left: 2px solid #b20000;
+}
+
+.stat-title 
+{
+  font-weight: bold;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b20000;
+}
+
+@media (min-width: 768px) {
+  .stat-box {
+    text-align: left;
+    padding-left: 2rem;
+    border-bottom: none;
+    border-right: 0px solid #b20000;
+  }
+
+  .stat-box:last-child {
+    border-right: none;
+  }
+}
+
+.accordion-button {
+  background-color: #fff5f5 !important;
+  color: #b30000 !important;
+  font-weight: bold !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffebeb !important;
+  color: #b30000 !important;
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  padding: 1.5rem;
+}
+
+.accordion-item 
+{
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hero-banner 
+{
+  background: url('https://images.unsplash.com/photo-1549921296-3a6b2ee39ed8?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-banner h1 
+{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.account-summary-box 
+{
+  border-left: 4px solid #b20000;
+  background-color: #f8f9fa;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

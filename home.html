@@ -1,0 +1,121 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mock Online Banking Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="images/index-logo.jpg" alt="Index Logo">
+    </a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="paybills.html">Pay Bills</a></li>
+            <li><a class="dropdown-item" href="applyforcredit.html">Apply for Credit</a></li>
+            <li><a class="dropdown-item" href="viewaccount.html">View Account</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signout.html">Sign Out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="mockCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/image A.jpg" class="d-block w-100 img-fluid" alt="Promo A">
+    </div>
+    <div class="carousel-item">
+      <img src="images/image B.jpg" class="d-block w-100 img-fluid" alt="Promo B">
+    </div>
+    <div class="carousel-item">
+      <img src="images/image C.jpg" class="d-block w-100 img-fluid" alt="Promo C">
+    </div>
+  </div>
+
+<!-- Navigation Buttons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#mockCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mockCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Welcome Section -->
+<div class="container text-center my-5">
+  <h1 class="text-danger fw-bold mb-3">Welcome to Student Online Banking</h1>
+  <p class="lead text-secondary mb-2">Your trusted partner for banking and financial services.</p>
+  <p class="text-muted">Enjoy the convenience of managing your money anytime, anywhere with Student Online Banking's </s> secure and smart online services.</p>
+</div>
+
+<!-- Online Services -->
+  <section class="container text-center my-5">
+    <h2 class="text-danger mb-4">Our Online Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm service-card">
+          <div class="card-body">
+            <h5 class="card-title">Apply for Credit</h5>
+            <p class="card-text">Personal, home, or auto loans with flexible terms.</p>
+            <a href="applyforcredit.html" class="btn btn-danger">Apply Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm service-card">
+          <div class="card-body">
+            <h5 class="card-title">Pay Bills Online</h5>
+            <p class="card-text">Pay your utilities, tuition, and more online.</p>
+            <a href="paybills.html" class="btn btn-danger">Pay Bills</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm service-card">
+          <div class="card-body">
+            <h5 class="card-title">View Accounts</h5>
+            <p class="card-text">Securely check your balances and history.</p>
+            <a href="viewaccount.html" class="btn btn-danger">View Savings Account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <footer>
+    <p><em>“Built By Student. for learning purpose”</em></p>
+    <p>This website is for educational purposes only and is not affiliated with the Bank of the Philippine Islands (BPI). © 2025. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

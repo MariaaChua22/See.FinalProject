@@ -1,0 +1,105 @@
+<html>
+<head>
+  <title>Pay Bills | Student Online Banking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="images/index-logo.jpg" alt="Index Logo">
+    </a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="paybills.html">Pay Bills</a></li>
+            <li><a class="dropdown-item" href="applyforcredit.html">Apply for Credit</a></li>
+            <li><a class="dropdown-item" href="viewaccount.html">View Account</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signout.html">Sign Out</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+
+<!-- Main Content -->
+  <main>
+    <div class="container">
+      <h2 class="text-danger fw-bold text-center mb-4">Pay Bills Online</h2>
+
+<!-- Success Alert -->
+      <div id="successAlert" class="alert alert-success text-center" role="alert">
+        ✅ Payment sent successfully!
+      </div>
+
+<!-- Styled Payment Form Container -->
+      <div class="paybills-container">
+        <form id="paymentForm">
+          <div class="mb-3">
+            <label for="billerName" class="form-label">Biller Name</label>
+            <input type="text" class="form-control" id="billerName" required>
+          </div>
+          <div class="mb-3">
+            <label for="accountNumber" class="form-label">Account Number</label>
+            <input type="text" class="form-control" id="accountNumber" required>
+          </div>
+          <div class="mb-3">
+            <label for="amount" class="form-label">Amount (PHP)</label>
+            <input type="number" class="form-control" id="amount" required>
+          </div>
+          <button type="submit" class="btn btn-danger">Submit Payment</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><em>“Make the best happen.”</em></p>
+    <p>This website is for educational purposes only and is not affiliated with the Bank of the Philippine Islands (BPI). © 2025. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS for Alert -->
+  <script>
+    document.getElementById('paymentForm').addEventListener('submit', function (e) 
+    {
+      e.preventDefault();
+      const alertBox = document.getElementById('successAlert');
+      alertBox.style.display = 'block';
+      this.reset();
+      
+      setTimeout(() => 
+      {
+        alertBox.style.display = 'none';
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>
